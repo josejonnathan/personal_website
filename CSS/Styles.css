@@ -20,33 +20,53 @@ nav {
     padding: 20px;
   }
 article {
-    float: left;
+    float: right;
     padding: 20px;
-    width: 70%;
+    width: 64%;
     background-color: #ffffff;
     height: 450px; 
+    text-align: justify;
   }
-  section::after {
+section::after {
     content: "";
     display: table;
     clear: both;
   }
-.prof_img {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 350px;
-    height: 400px;
-    border-radius: 50px;
-    object-fit: cover;
-    
-}
 footer {
   background-color: #1a73b3;
   padding: 10px;
   text-align: center;
   color: white;
   font-size: 10px;
+}
+.prof_img {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  height: 400px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.weblink {
+  display: inline-block;
+  padding: 40px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.container {
+  position: relative;
+}
+.text-block {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: black;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
 }
