@@ -26,6 +26,11 @@ article {
     background-color: #ffffff;
     height: 450px; 
   }
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 .prof_img {
     display: block;
     margin-top: 20px;
@@ -37,4 +42,11 @@ article {
     border-radius: 50px;
     object-fit: cover;
     
+}
+footer {
+  background-color: #1a73b3;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 10px;
 }
