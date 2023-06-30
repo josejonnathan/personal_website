@@ -5,6 +5,9 @@ body {
     font font-size: 12px;
 
 }
+ul {
+  list-style: none;
+}
 header {
     background-color: #1a73b3;
     padding: 30px;
@@ -58,15 +61,7 @@ footer {
   border-radius: 50px;
   object-fit: cover;
 }
-.container {
-  position: relative;
-}
-.text-block {
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-  background-color: black;
-  color: white;
-  padding-left: 5px;
-  padding-right: 5px;
+.emvideo {
+  width: 300px;
+  margin-top: 20px;
 }
