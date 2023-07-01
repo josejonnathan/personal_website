@@ -1,67 +1,148 @@
-body {
-    background-color: rgb(255, 255, 255);
-    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-    padding: 30px;
-    font font-size: 12px;
+ /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+
+ body{
+  font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+ }
+ .bannerbox{
+  display: flex;
+  max-width: 100%;
+  height: 80vh;
+  background-image: url(../Images/ReelHero2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+ }
+ .bannerbox .wrap{
+    max-width: 40vw;
+    align-self: center;
+    margin: 0 auto;
+    height: 35vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    background-color: rgba(181, 244, 223, 0.911);
+    border-radius: 15px;
+    padding: 20px;
+ }
+ .bannerbox .wrap .box {
+    flex-basis: 100%;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    align-self: center;
+ }
+ .bannerbox .wrap .box span{
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 300;
+ }
+ .bannerbox .wrap .box h1{
+    font-size: 32px;
+    letter-spacing: 1px;
+    line-height: .9;
+    padding-bottom: 10px;
+}
+.bannerbox .wrap .box p{
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: justify;
+}
+.bannerbox .wrap .buttons {
+    display: flex;
+    margin-top: 30px;
+    flex-flow: row wrap;
+    justify-content: center;
 
 }
-ul {
-  list-style: none;
-}
-header {
-    background-color: #1a73b3;
-    padding: 30px;
+.bannerbox .wrap .buttons .bt1{
+    flex-basis: 30%;
+    border: solid 2px;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    margin-right: 20px;
     text-align: center;
-    font-size: 15px;
-    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
 }
-nav {
-    float: left;
-    width: 30%;
-    height: 450px; 
-    background: #ffffff;
-    padding: 20px;
-  }
-article {
-    float: right;
-    padding: 20px;
-    width: 64%;
-    background-color: #ffffff;
-    height: 450px; 
-    text-align: justify;
-  }
-section::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-footer {
-  background-color: #1a73b3;
-  padding: 10px;
-  text-align: center;
-  color: white;
-  font-size: 10px;
+.bannerbox .wrap .buttons .bt1:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(105, 169, 148);
+    transform: scale(1.1); 
 }
-.prof_img {
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 350px;
-  height: 400px;
-  border-radius: 50px;
-  object-fit: cover;
+.bannerbox .wrap .buttons .bt2{
+    flex-basis: 30%;
+    border: solid 0px;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(132, 206, 181);
+    background-color: rgb(0, 0, 0);
+    transition: all 0.3s;
 }
-.weblink {
-  display: inline-block;
-  padding: 40px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50px;
-  object-fit: cover;
+.bannerbox .wrap .buttons .bt2:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(105, 169, 148);
+    transform: scale(1.1);   
 }
-.emvideo {
-  width: 300px;
-  margin-top: 20px;
+.header{
+    background-color: rgb(105, 169, 148);
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    height: 75px;
+    padding: 5px 10%;
+}
+.header .logo{
+    cursor: pointer;
+}
+.header .logo img{
+    height: 60px;
+    width: auto;
+    transition: all 0.3s;
+}
+.header .logo img:hover{
+    transform: scale(1.1);
+}
+.header .navlinks {
+    list-style: none;
+}
+.header .navlinks li{
+    display: inline-block;
+    padding: 0 40px 0 40px;
+    transition: all 0.3s;
+}
+.header .navlinks li:hover{
+    transform: scale(1.1);
+}
+.header .navlinks a{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.header .navlinks a:hover{
+    color: rgb(31, 31, 31);
+}
+header .bt2{
+    flex-basis: 4%;
+    border: solid 0px;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(132, 206, 181);
+    background-color: rgb(0, 0, 0);
+    transition: all 0.3s;
+}
+header .bt2:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(132, 206, 181);
+    transform: scale(1.1);
 }
