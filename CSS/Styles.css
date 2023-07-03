@@ -5,6 +5,65 @@
   padding: 0;
   margin: 0;
  }
+ .header{
+    display: flex;
+    flex-flow: wrap;
+    width: 100vw;
+    float: right;
+    background-color: rgba(105, 169, 148, 0.61);
+    justify-content:space-around ;
+    align-items: center;
+    height: 66px;
+    position: fixed;
+}
+.header .logo{
+    cursor: pointer;
+}
+.header .logo img{
+    height: 55px;
+    width: auto;
+    transition: all 0.3s;
+}
+.header .logo img:hover{
+    transform: scale(1.1);
+}
+.header .navlinks {
+    list-style: none;
+}
+.header .navlinks li{
+    display: inline-block;
+    padding: 0 40px 0 40px;
+    transition: all 0.3s;
+}
+.header .navlinks li:hover{
+    transform: scale(1.1);
+}
+.header .navlinks a{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.header .navlinks a:hover{
+    color: rgb(31, 31, 31);
+}
+header .bt2{
+    flex-basis: 4%;
+    border: solid 0px;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(132, 206, 181);
+    background-color: rgb(0, 0, 0);
+    transition: all 0.3s;
+}
+header .bt2:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(132, 206, 181);
+    transform: scale(1.1);
+}
  .bannerbox{
   display: flex;
   flex-direction: row;
@@ -91,62 +150,7 @@
     background-color: rgb(105, 169, 148);
     transform: scale(1.1);   
 }
-.header{
-    background-color: rgb(105, 169, 148);
-    display: flex;
-    justify-content:space-around ;
-    align-items: center;
-    height: 65px;
-    padding: 5px 10%;
-}
-.header .logo{
-    cursor: pointer;
-}
-.header .logo img{
-    height: 55px;
-    width: auto;
-    transition: all 0.3s;
-}
-.header .logo img:hover{
-    transform: scale(1.1);
-}
-.header .navlinks {
-    list-style: none;
-}
-.header .navlinks li{
-    display: inline-block;
-    padding: 0 40px 0 40px;
-    transition: all 0.3s;
-}
-.header .navlinks li:hover{
-    transform: scale(1.1);
-}
-.header .navlinks a{
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-.header .navlinks a:hover{
-    color: rgb(31, 31, 31);
-}
-header .bt2{
-    flex-basis: 4%;
-    border: solid 0px;
-    border-radius: 20px;
-    padding: 10px 30px 10px 30px;
-    margin-right: 20px;
-    text-align: center;
-    font-size: 16px;
-    text-decoration: none;
-    color: rgb(132, 206, 181);
-    background-color: rgb(0, 0, 0);
-    transition: all 0.3s;
-}
-header .bt2:hover{
-    color: rgb(0, 0, 0);
-    background-color: rgb(132, 206, 181);
-    transform: scale(1.1);
-}
+
 .container{
     display: flex;
     flex-flow: wrap;
