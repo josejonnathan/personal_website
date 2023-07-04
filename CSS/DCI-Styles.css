@@ -24,7 +24,6 @@
 }
 .header .logo img{
     height: 55px;
-    width: auto;
     transition: all 0.3s;
 }
 .header .logo img:hover{
