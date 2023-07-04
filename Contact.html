@@ -26,12 +26,24 @@
       <form name="contactForm" onsubmit="return validateForm()">
         <h3>Contact me</h3>
         <label for="name">Name</label>
-        <input type="text" id="name" required />
+        <input type="text" id="name" placeholder="Required" required />
         <label for="mail">Email</label>
-        <input type="email" id="email" name="email" required />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Required"
+          required
+        />
         <label for="message">Message</label>
-        <textarea id="message" rows="4" name="message" required></textarea>
-        <input type="submit" value="Submit" />
+        <textarea
+          id="message"
+          rows="4"
+          name="message"
+          placeholder="Required"
+          required
+        ></textarea>
+        <button class="button" value="Submit">Send</button>
         <div id="messageContainer"></div>
       </form>
     </div>

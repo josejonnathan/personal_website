@@ -69,8 +69,10 @@ header .bt2:hover{
     border-radius: 15px;
 }
 .base h3{
-    color: rgb(132, 206, 181);
+    color: rgb(108, 169, 149);
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .base input, .base textarea{
@@ -79,16 +81,32 @@ header .bt2:hover{
     padding: 20px;
     outline: none;
     background: rgb(218, 218, 218);
+    font-style: italic;
+    font-size: 14px;
+    border-radius: 10px;
+}
+.base label{
+    color: rgb(108, 169, 149);
+    font-size: 14px;
+
 }
 .base button{
     padding: 20px;
     background-color: rgb(132, 206, 181);
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 15px;
     border: 0;
     outline: none;
     cursor: pointer;
     width: 150px;
-    margin: 20px auto 0 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
     border-radius: 30px;
+    transition: all .3s
+    ;
+}
+.base button:hover {
+    scale: 1.1;
+    background-color: rgb(108, 169, 149);
 }
