@@ -198,7 +198,7 @@ header .bt2:hover{
 }
 .separators{
     display: flex;
-    width: 80vw;
+    width: 60vw;
     flex-flow: wrap;
     border: 0px solid black;
     justify-content: space-around;
@@ -211,6 +211,9 @@ header .bt2:hover{
     color: rgb(0, 0, 0);
     margin: 0px;
     line-height: 1.5;
+}
+.separators a{
+    text-decoration: none;
 }
 .separators h2{
     text-align: center;
@@ -230,7 +233,7 @@ header .bt2:hover{
 
   }
   
-  .containerexp {
+.containerexp {
       width: 130px;
       height: 130px;
       position: relative;
@@ -239,14 +242,14 @@ header .bt2:hover{
       margin-bottom: 2px;
     }
     
-    .containerexp .image {
+.containerexp .image {
       width: 130px;
       height: 130px;
       display: inline-block;
       height: auto;
     }
     
-    .containerexp .overlay {
+.containerexp .overlay {
       position: absolute;
       bottom: 100%;
       left: 0;
@@ -258,25 +261,73 @@ header .bt2:hover{
       transition: .5s ease;
     }
     
-    .containerexp:hover .overlay {
+.containerexp:hover .overlay {
       bottom: 0;
       height: 100%;
     }
-    .containerexp a{
+.containerexp a{
       text-decoration: none;
     }
-    .containerexp .text h4{
+.containerexp .text h4{
       color: white;
       font-style: normal;
       font-size: 14px;
       text-align: center;
       line-height: .9;
     }
-    .containerexp .text p{
+.containerexp .text p{
       color: white;
       font-size: 13px;
       text-align: center;
       line-height: 1;
      }
 
-  
+
+    .containervid {
+    width: 100px;
+    height: 130px;
+    position: relative;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    }
+    
+    .containervid .image {
+    width: 100px;
+    height: 130px;
+    display: inline-block;
+    height: auto;
+    }
+    
+    .containervid .overlay {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    background-color: rgb(105, 169, 148);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+    }
+    
+    .containervid:hover .overlay {
+    bottom: 0;
+    height: 100%;
+    }
+    .containervid a{
+    text-decoration: none;
+    }
+    .containervid .text h4{
+    color: white;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+    line-height: .9;
+    }
+    .containervid .text p{
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1;
+    }
