@@ -5,6 +5,30 @@
   padding: 0;
   margin: 0;
  }
+ .totop {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: end;
+    height: 100vh;
+    position: fixed;
+    margin-left: 93vw;
+    margin-right: auto;
+    text-decoration: none;
+ }
+ .totop a{
+    text-decoration: none;
+    color: rgb(105, 169, 148);
+    font-size: 35px;
+    text-align: center;
+
+ } 
+ .totop p{
+    text-decoration: none;
+    color: rgb(105, 169, 148);
+    font-size: 14px;
+    text-align: center;
+ }
+
  .header{
     display: flex;
     flex-flow: wrap;
@@ -13,20 +37,10 @@
     background-color: rgba(105, 169, 148, 0.61);
     justify-content:space-around ;
     align-items: center;
-    height: 66px;
+    height: 3.5vw;
     position: relative;
 }
-.header .logo{
-    cursor: pointer;
-}
-.header .logo img{
-    height: 55px;
-    width: auto;
-    transition: all 0.3s;
-}
-.header .logo img:hover{
-    transform: scale(1.1);
-}
+
 .header .navlinks {
     list-style: none;
 }
@@ -46,24 +60,7 @@
 .header .navlinks a:hover{
     color: rgb(31, 31, 31);
 }
-header .bt2{
-    flex-basis: 4%;
-    border: solid 0px;
-    border-radius: 20px;
-    padding: 10px 30px 10px 30px;
-    margin-right: 20px;
-    text-align: center;
-    font-size: 16px;
-    text-decoration: none;
-    color: rgb(132, 206, 181);
-    background-color: rgb(0, 0, 0);
-    transition: all 0.3s;
-}
-header .bt2:hover{
-    color: rgb(0, 0, 0);
-    background-color: rgb(132, 206, 181);
-    transform: scale(1.1);
-}
+
  .bannerbox{
   display: flex;
   flex-direction: row;
@@ -77,23 +74,22 @@ header .bt2:hover{
   padding: 150px 50px 0px 0px; 
 }
  .bannerbox .wrap{
-    width: 40vw;
-    height: 35vh;
+    width: 30vw;
+    height: auto;
     display: flex;
-    /* justify-content: left; */
-    background-color: rgba(181, 244, 223, 0.577);
     border-radius: 15px;
-    padding: 20px;
+    margin-left: 55vw;
+    margin-right: auto;
+    
  }
  .bannerbox .wrap .box {
     flex-basis: 100%;
     color: rgb(0, 0, 0);
     text-align: left;
-    align-self: center;
  }
  .bannerbox .wrap .box span{
     font-size: 18px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-weight: 300;
  }
  .bannerbox .wrap .box h1{
@@ -111,19 +107,20 @@ header .bt2:hover{
     display: flex;
     margin-top: 30px;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
 
 }
 .bannerbox .wrap .buttons .bt1{
-    flex-basis: 30%;
-    border: solid 2px;
+    flex-basis: 15%;
+    border: solid 0px;
     border-radius: 20px;
     padding: 10px 30px 10px 30px;
     margin-right: 20px;
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
     text-decoration: none;
-    color: black;
+    color: rgb(132, 206, 181);
+    background-color: rgb(0, 0, 0);
     transition: all 0.3s;
 }
 .bannerbox .wrap .buttons .bt1:hover{
@@ -132,25 +129,6 @@ header .bt2:hover{
     background-color: rgb(105, 169, 148);
     transform: scale(1.1); 
 }
-.bannerbox .wrap .buttons .bt2{
-    flex-basis: 30%;
-    border: solid 0px;
-    border-radius: 20px;
-    padding: 10px 30px 10px 30px;
-    margin-right: 20px;
-    text-align: center;
-    font-size: 18px;
-    text-decoration: none;
-    color: rgb(132, 206, 181);
-    background-color: rgb(0, 0, 0);
-    transition: all 0.3s;
-}
-.bannerbox .wrap .buttons .bt2:hover{
-    color: rgb(0, 0, 0);
-    background-color: rgb(105, 169, 148);
-    transform: scale(1.1);   
-}
-
 .container{
     display: flex;
     flex-flow: wrap;
