@@ -14,7 +14,7 @@
     justify-content:space-around ;
     align-items: center;
     height: 66px;
-    position: fixed;
+    position: relative;
 }
 .header .logo{
     cursor: pointer;
